@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C32978B-FC7B-44A2-AFC6-F7E520299BB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InventoryControlSystem</RootNamespace>
+    <AssemblyName>InventoryControlSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GRN\Form_AddGRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN\Form_AddGRN.designer.cs">
+      <DependentUpon>Form_AddGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN\Form_CancelGRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN\Form_CancelGRN.designer.cs">
+      <DependentUpon>Form_CancelGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN\Form_EditGRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN\Form_EditGRN.designer.cs">
+      <DependentUpon>Form_EditGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN\Form_EditGRNSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN\Form_EditGRNSelect.designer.cs">
+      <DependentUpon>Form_EditGRNSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN\Form_GRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN\Form_GRN.designer.cs">
+      <DependentUpon>Form_GRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GRN\Form_ViewGRN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRN\Form_ViewGRN.designer.cs">
+      <DependentUpon>Form_ViewGRN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRequest\Form_AddItemRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRequest\Form_AddItemRequest.designer.cs">
+      <DependentUpon>Form_AddItemRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRequest\Form_CancelItemRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRequest\Form_CancelItemRequest.designer.cs">
+      <DependentUpon>Form_CancelItemRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRequest\Form_EditItemRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRequest\Form_EditItemRequest.designer.cs">
+      <DependentUpon>Form_EditItemRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRequest\Form_EditItemRequestSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRequest\Form_EditItemRequestSelect.designer.cs">
+      <DependentUpon>Form_EditItemRequestSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRequest\Form_ItemRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRequest\Form_ItemRequest.designer.cs">
+      <DependentUpon>Form_ItemRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MainMenu.Designer.cs">
+      <DependentUpon>Form_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRequest\Form_ViewItemRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRequest\Form_ViewItemRequest.designer.cs">
+      <DependentUpon>Form_ViewItemRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Form_AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Form_AddItem.designer.cs">
+      <DependentUpon>Form_AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\Form_Items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items\Form_Items.designer.cs">
+      <DependentUpon>Form_Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrder\Form_AddPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_AddPurchaseOrder.designer.cs">
+      <DependentUpon>Form_AddPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_CancelPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_CancelPurchaseOrder.designer.cs">
+      <DependentUpon>Form_CancelPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_EditPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_EditPurchaseOrder.designer.cs">
+      <DependentUpon>Form_EditPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_EditPurchaseOrderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_EditPurchaseOrderSelect.designer.cs">
+      <DependentUpon>Form_EditPurchaseOrderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_PurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_PurchaseOrder.designer.cs">
+      <DependentUpon>Form_PurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_ViewPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\Form_ViewPurchaseOrder.designer.cs">
+      <DependentUpon>Form_ViewPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_AddSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_AddSI.designer.cs">
+      <DependentUpon>Form_AddSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_CancelSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_CancelSI.designer.cs">
+      <DependentUpon>Form_CancelSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_EditSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_EditSI.designer.cs">
+      <DependentUpon>Form_EditSI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_EditSISelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_EditSISelect.designer.cs">
+      <DependentUpon>Form_EditSISelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_StoresIssuing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_StoresIssuing.designer.cs">
+      <DependentUpon>Form_StoresIssuing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_ViewSI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresIssuing\Form_ViewSI.designer.cs">
+      <DependentUpon>Form_ViewSI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GRN\Form_AddGRN.resx">
+      <DependentUpon>Form_AddGRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN\Form_CancelGRN.resx">
+      <DependentUpon>Form_CancelGRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN\Form_EditGRN.resx">
+      <DependentUpon>Form_EditGRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN\Form_EditGRNSelect.resx">
+      <DependentUpon>Form_EditGRNSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN\Form_GRN.resx">
+      <DependentUpon>Form_GRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRN\Form_ViewGRN.resx">
+      <DependentUpon>Form_ViewGRN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRequest\Form_AddItemRequest.resx">
+      <DependentUpon>Form_AddItemRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRequest\Form_CancelItemRequest.resx">
+      <DependentUpon>Form_CancelItemRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRequest\Form_EditItemRequest.resx">
+      <DependentUpon>Form_EditItemRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRequest\Form_EditItemRequestSelect.resx">
+      <DependentUpon>Form_EditItemRequestSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRequest\Form_ItemRequest.resx">
+      <DependentUpon>Form_ItemRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MainMenu.resx">
+      <DependentUpon>Form_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRequest\Form_ViewItemRequest.resx">
+      <DependentUpon>Form_ViewItemRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Form_AddItem.resx">
+      <DependentUpon>Form_AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\Form_Items.resx">
+      <DependentUpon>Form_Items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchaseOrder\Form_AddPurchaseOrder.resx">
+      <DependentUpon>Form_AddPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder\Form_CancelPurchaseOrder.resx">
+      <DependentUpon>Form_CancelPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder\Form_EditPurchaseOrder.resx">
+      <DependentUpon>Form_EditPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder\Form_EditPurchaseOrderSelect.resx">
+      <DependentUpon>Form_EditPurchaseOrderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder\Form_PurchaseOrder.resx">
+      <DependentUpon>Form_PurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder\Form_ViewPurchaseOrder.resx">
+      <DependentUpon>Form_ViewPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresIssuing\Form_AddSI.resx">
+      <DependentUpon>Form_AddSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresIssuing\Form_CancelSI.resx">
+      <DependentUpon>Form_CancelSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresIssuing\Form_EditSI.resx">
+      <DependentUpon>Form_EditSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresIssuing\Form_EditSISelect.resx">
+      <DependentUpon>Form_EditSISelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresIssuing\Form_StoresIssuing.resx">
+      <DependentUpon>Form_StoresIssuing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresIssuing\Form_ViewSI.resx">
+      <DependentUpon>Form_ViewSI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5G.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
